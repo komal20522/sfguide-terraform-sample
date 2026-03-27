@@ -21,7 +21,8 @@ provider "registry.terraform.io/hashicorp/tls" {
 }
 
 provider "registry.terraform.io/snowflakedb/snowflake" {
-  version = "2.14.1"
+  version     = "2.14.1"
+  constraints = ">= 2.0.0"
   hashes = [
     "h1:0uJO8z2oDzGXeke9/KA6ac6eEU178QXllvbre5IVQV0=",
     "zh:07ffffffcf91cdda78a984bce07f1ffb2cc358049cc246636347a008cc6eb0ad",

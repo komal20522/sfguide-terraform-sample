@@ -1,54 +1,58 @@
 variable "organization_name" {
-  description = "Snowflake organization name"
-  type        = string
+  type = string
 }
 
 variable "account_name" {
-  description = "Snowflake account name"
-  type        = string
+  type = string
 }
 
 variable "private_key_path" {
-  description = "Path to private key"
-  type        = string
+  type = string
 }
 
 variable "snowflake_user" {
-  description = "Terraform service user"
-  type        = string
-  default     = "TERRAFORM_SVC"
+  type    = string
+  default = "TERRAFORM_SVC"
 }
 
 variable "sysadmin_role" {
-  description = "SYSADMIN role"
-  type        = string
-  default     = "SYSADMIN"
+  type    = string
+  default = "SYSADMIN"
 }
 
 variable "useradmin_role" {
-  description = "USERADMIN role"
-  type        = string
-  default     = "USERADMIN"
+  type    = string
+  default = "USERADMIN"
 }
 
 # Infra
 variable "database_name" {
-  type    = string
+  type = string
 }
 
 variable "schema_name" {
-  type    = string
+  type = string
 }
 
 variable "warehouse_name" {
-  type    = string
+  type = string
 }
 
-# User / Role
+# User
 variable "role_name" {
-  type    = string
+  type = string
 }
 
 variable "user_name" {
-  type    = string
+  type = string
+}
+
+# Table
+variable "table_name" {
+  type = string
+}
+
+# Stage
+variable "stage_name" {
+  type = string
 }
